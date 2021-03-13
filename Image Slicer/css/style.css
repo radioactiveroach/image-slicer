@@ -1,0 +1,21 @@
+header{text-align: center;}
+div{
+    width: 100%;
+}
+.controls {
+    align-self: center;
+    align-content: center;
+    padding: 5px;
+}
+.btnsplit {
+    align-content: center;
+    padding: 20px;
+}
+#canvas {
+    width: 50%;
+    max-width: 100%;
+}
+#downloads {
+    width: 50%;
+    max-width: 100;
+}

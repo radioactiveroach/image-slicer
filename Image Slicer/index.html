@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+
+<body>
+    <header>
+        <h1>Image Slicer</h1>
+    </header>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script defer src="scripts/main.js">
+    </script>
+    <div class="controls">
+        <label id="label" for="imagefile">
+            Select an image:
+        </label>
+        <input id="imagefile" type="file" accept="image/jpeg,image/png"></input>
+    </div>
+    <div class="controls">
+        <label for="sortorder">Images Sorted:</label>
+        <select id="sortorder">
+            <option value="colstorows">Columns to Rows</option>
+            <option value="rowstocols">Rows to Columns</option>
+        </select>
+    </div>
+    <div class="controls">
+        <label for="numcol">Number of Columns:</label>
+        <span><input id="numcol" type="number" min="1" max="50" value="1"></span>
+        <label for="numrow">Number of Rows:</label>
+        <span><input id="numrow" type="number" min="1" max="50" value="1"></span>
+    </div>
+    <div class="btnsplit">
+        <button id="cropimg">Split Images</button>
+    </div>
+    <div class="drawarea">
+        <span><canvas id="canvas"></canvas></span>
+        <span><ul id="downloads"></ul></span>
+    </div>
+</body>
+
+</html>
